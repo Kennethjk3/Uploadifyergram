@@ -1,0 +1,14 @@
+Welcome to the index<br />
+These are the Users!<br />
+<br />
+<%= link_to 'Create New User', new_user_path %>
+
+<ul>
+  <% @users.each do |a| %>
+    <li>
+      <%= a.avatar %>
+      <br />
+      <%= a.name %>
+    </li>
+  <% end %>
+</ul>
