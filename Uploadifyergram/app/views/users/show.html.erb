@@ -3,8 +3,8 @@
 <h2><%= @user.name %></h2>
   <%= image_tag @user.avatar.url(:medium) %>
 
-<div class="show actions">
+<h5 class="show actions">
   <%= link_to 'Edit', edit_user_path(@user) %>
-  <%= link_to 'Remove', @user, data: { confirm: 'Are you sure you want to lose a user?' }, method: :delete, class: 'destroy' %>
-  <%= link_to 'Back to all my users', users_path %>
-</div>
+  <%= link_to 'Delete', @user, method: :delete, class: 'destroy' %><br />
+  <%= link_to 'Back to Peeps', users_path %>
+</h5>
