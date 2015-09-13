@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @user.name %></h2>
+  <%= image_tag @user.avatar.url(:medium) %>
+
+<h5 class="show actions">
+  <%= link_to 'Edit', edit_user_path(@user) %>
+  <%= link_to 'Delete', @user, method: :delete, class: 'destroy' %><br />
+  <%= link_to 'Back to Peeps', users_path %>
+</h5>
